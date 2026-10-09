@@ -472,6 +472,711 @@
                     </a>
                 </div>
 
+                <!-- CONTACT FORM -->
+                <form class="contact-form" id="contact-form">
+                    <h3>Send Me a Message</h3>
+
+                    <p>
+                        Complete the fields below to prepare your message.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                            aria-describedby="name-error"
+                        >
+
+                        <span
+                            class="form-error"
+                            id="name-error"
+                            aria-live="polite"
+                        ></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            aria-describedby="email-error"
+                        >
+
+                        <span
+                            class="form-error"
+                            id="email-error"
+                            aria-live="polite"
+                        ></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+
+                        <textarea
+                            id="contact-message"
+                            name="message"
+                            rows="5"
+                            required
+                            aria-describedby="message-error"
+                        ></textarea>
+
+                        <span
+                            class="form-error"
+                            id="message-error"
+                            aria-live="polite"
+                        ></span>
+                    </div>
+
+                    <button
+                        class="primary-button"
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+
+                    <p
+                        class="form-status"
+                        id="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+               
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Remart Lachica. All rights reserved.
+        </p>
+
+        <p>Driven by curiosity, creativity, and a passion for technology.
+.</p>
+    </footer>
+
+    <!-- LABORATORY DETAILS MODAL -->
+    <div class="modal" id="activity-modal" hidden>
+        <div
+            class="modal-backdrop"
+            data-close-modal
+        ></div>
+
+        <section
+            class="modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+            aria-describedby="modal-description"
+            tabindex="-1"
+        >
+            <button
+                class="modal-close"
+                id="modal-close"
+                type="button"
+                aria-label="Close laboratory details"
+            >
+                &times;
+            </button>
+
+            <p class="eyebrow">MY MAJOR LABORATORY</p>
+
+            <h2 id="modal-title">Laboratory Title</h2>
+
+            <p
+                class="modal-subject"
+                id="modal-subject"
+            ></p>
+
+            <p id="modal-description"></p>
+
+            <img
+                id="activity-image"
+                class="activity-image"
+                src="images/laboratories/programming.jpg"
+                alt=""
+                width="800"
+                height="600"
+            >
+        </section>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Remart Lachica's personal portfolio showcasing Computer Science laboratory activities, programming, web development, multimedia, and digital projects."
+    >
+
+    <meta name="theme-color" content="#e8f3e7">
+
+    <title>Remart Lachica | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- SKIP LINK -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="#home">
+                Remart<span>Portfolio.</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                <span aria-hidden="true">☰</span>
+                <span>Menu</span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li>
+                    <a href="#home" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#laboratories">My Major Laboratories</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HOME -->
+        <section
+            class="hero section nav-screen is-active"
+            id="home"
+            aria-labelledby="home-title"
+        >
+            <div class="hero-content animate-left">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1 id="home-title">
+                    HELLO! I'M
+                    <span>REMART LACHICA</span>
+                </h1>
+
+                <p class="hero-description">
+                    I am a Computer Science student passionate about
+                    technology, programming, and digital creativity.
+                    Welcome to my portfolio, where I share my laboratory
+                    activities, learning experiences, and creative outputs.
+                </p>
+
+                <p class="hero-goal">
+                    My goal is to improve my technical skills, gain
+                    practical experience, and develop useful digital
+                    solutions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="primary-button" href="#laboratories">
+                        View My Major Laboratories
+                    </a>
+
+                    <a class="secondary-button" href="#contact">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-right">
+                <img
+                    class="hero-profile"
+                    src="profile.png"
+                    alt="Portrait of Remart Lachica"
+                    width="300"
+                    height="300"
+                >
+
+                <div class="decor-card" aria-label="My personal motto">
+                    <p>Explore.</p>
+                    <p>Design.</p>
+                    <p>Innovate.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section
+            class="section about-section nav-screen"
+            id="about"
+            aria-labelledby="about-title"
+        >
+            <div class="section-heading animate-up">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2 id="about-title">About Me</h2>
+                <p>Learn more about my background and interests.</p>
+            </div>
+
+            <div class="about-card animate-left">
+                <img
+                    class="profile-image"
+                    src="profile.png"
+                    alt="Remart Lachica, the owner of this portfolio"
+                    width="250"
+                    height="250"
+                >
+
+                <div class="about-text">
+                    <h3>Hello there!</h3>
+
+                    <p>
+                        I am Remart Lachica, a Computer Science student
+                        interested in technology, programming, and digital
+                        design. I enjoy exploring computer applications,
+                        developing my coding skills, and creating digital
+                        projects.
+                    </p>
+
+                    <p>
+                        Through my laboratory activities, I continue to
+                        learn about different areas of Computer Science.
+                        My goal is to improve my technical abilities,
+                        gain practical experience, and create useful
+                        digital solutions.
+                    </p>
+
+                    <h3>Personal Information</h3>
+
+                    <ul class="profile-details">
+                        <li>
+                            <strong>Name:</strong>
+                            Remart Lachica
+                        </li>
+
+                        <li>
+                            <strong>Course:</strong>
+                            Bachelor of Science in Computer Science
+                        </li>
+
+                        <li>
+                            <strong>Educational Background:</strong>
+                            <span>
+                                North Eastern Mindanao State University (NEMSU) — 3rd Year Computer Science Student.
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Interests:</strong>
+                            Programming, photo editing, multimedia,
+                            and digital design
+                        </li>
+
+                        <li>
+                            <strong>Career Goal:</strong>
+                            To continue learning and develop useful
+                            technology-based solutions
+                        </li>
+
+                        <li>
+                            <strong>Personal Qualities:</strong>
+                            Willingness to learn, creativity, and
+                            problem-solving
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY MAJOR LABORATORIES -->
+        <section
+            class="section laboratories-section nav-screen"
+            id="laboratories"
+            aria-labelledby="laboratories-title"
+        >
+            <div class="section-heading animate-up">
+                <p class="eyebrow">MY LEARNING JOURNEY</p>
+
+                <h2 id="laboratories-title">
+                    My Major Laboratories
+                </h2>
+
+                <p>
+                    Explore my laboratory activities, exercises,
+                    and outputs from different areas of Computer Science.
+                </p>
+            </div>
+
+            <div class="activity-grid">
+
+                <!-- LABORATORY 1 -->
+                <article class="activity-card animate-left">
+                    <img
+                        class="course-image"
+                        src="lab1.png"
+                        alt="Screenshot of a programming activity"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    >
+
+                    <div class="activity-content">
+                        <p class="lab-number">LABORATORY 01</p>
+
+                        <h3>Naruto Wallpaper Editing</h3>
+
+                        <p>
+                            An image editing activity that focuses on enhancing a Naruto-themed wallpaper using creative design techniques and visual elements.
+                        </p>
+
+                        <p class="lab-tools">
+                            <strong>Tools:</strong>
+                            Adobe Photoshop Software
+                        </p>
+
+                        <button
+                            class="activity-button"
+                            type="button"
+                            data-activity="0"
+                        >
+                            View Laboratory
+                        </button>
+                    </div>
+                </article>
+
+                <!-- LABORATORY 2 -->
+                <article class="activity-card animate-up">
+                    <img
+                        class="course-image"
+                        src="lab2.jpg"
+                        alt="Screenshot of a website development activity"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    >
+
+                    <div class="activity-content">
+                        <p class="lab-number">LABORATORY 02</p>
+
+                        <h3>Typography and Letter Design</h3>
+
+                        <p>
+                            A typography activity that focuses on designing and styling letters using creative fonts, text effects, and visual elements.
+                        </p>
+
+                        <p class="lab-tools">
+                            <strong>Tools:</strong>
+                            Adobe Photoshop Software
+                        </p>
+
+                        <button
+                            class="activity-button"
+                            type="button"
+                            data-activity="1"
+                        >
+                            View Laboratory
+                        </button>
+                    </div>
+                </article>
+
+                <!-- LABORATORY 3 -->
+                <article class="activity-card animate-right">
+                    <img
+                        class="course-image"
+                        src="lab3.png"
+                        alt="Preview of an edited photograph"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    >
+
+                    <div class="activity-content">
+                        <p class="lab-number">LABORATORY 03</p>
+
+                        <h3>ltrasonic Distance Sensor</h3>
+
+                        <p>
+                            An embedded systems activity that uses Tinkercad to simulate an ultrasonic distance sensor and understand how it measures the distance of an object.
+                        </p>
+
+                        <p class="lab-tools">
+                            <strong>Tools:</strong>
+                            Tinkercad
+                        </p>
+
+                        <button
+                            class="activity-button"
+                            type="button"
+                            data-activity="2"
+                        >
+                            View Laboratory
+                        </button>
+                    </div>
+                </article>
+
+                <!-- LABORATORY 4 -->
+                <article class="activity-card animate-left">
+                    <img
+                        class="course-image"
+                        src="lab4.png"
+                        alt="Preview of a multimedia laboratory output"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    >
+
+                    <div class="activity-content">
+                        <p class="lab-number">LABORATORY 04</p>
+
+                        <h3>String Reversal in C</h3>
+
+                        <p>
+                            A programming activity that uses the C language to reverse a given string using string length and a loop, demonstrating basic programming logic.
+                        </p>
+
+                        <p class="lab-tools">
+                            <strong>Tools:</strong>
+                            C Programming Language
+                        </p>
+
+                        <button
+                            class="activity-button"
+                            type="button"
+                            data-activity="3"
+                        >
+                            View Laboratory
+                        </button>
+                    </div>
+                </article>
+
+                <!-- LABORATORY 5 -->
+                <article class="activity-card animate-up">
+                    <img
+                        class="course-image"
+                        src="lab5.png"
+                        alt="Screenshot of a database laboratory activity"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    >
+
+                    <div class="activity-content">
+                        <p class="lab-number">LABORATORY 05</p>
+
+                        <h3>Asian Food Brochure Design</h3>
+
+                        <p>
+                            A brochure design activity featuring Korean, Thai, and Filipino food, combining images, text, and creative layouts to present different food cultures.
+                        </p>
+
+                        <p class="lab-tools">
+                            <strong>Tools:</strong>
+                            Adobe Photoshop Software
+                        </p>
+
+                        <button
+                            class="activity-button"
+                            type="button"
+                            data-activity="4"
+                        >
+                            View Laboratory
+                        </button>
+                    </div>
+                </article>
+
+                <!-- LABORATORY 6 -->
+                <article class="activity-card animate-right">
+                    <img
+                        class="course-image"
+                        src="lab6.png"
+                        alt="Screenshot of a Computer Science diagram or automata exercise"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    >
+
+                    <div class="activity-content">
+                        <p class="lab-number">LABORATORY 06</p>
+
+                        <h3>Web Page Formatting</h3>
+
+                        <p>
+                            A web development activity that focuses on formatting and organizing webpage content using appropriate layouts, text styles, and design elements.
+                        </p>
+
+                        <p class="lab-tools">
+                            <strong>Tools:</strong>
+                            HTML and CSS
+                        </p>
+
+                        <button
+                            class="activity-button"
+                            type="button"
+                            data-activity="5"
+                        >
+                            View Laboratory
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section
+            class="section contact-section nav-screen"
+            id="contact"
+            aria-labelledby="contact-title"
+        >
+            <div class="section-heading animate-up">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2 id="contact-title">Contact Me</h2>
+
+                <p>
+                    Feel free to reach out through my contact
+                    information or social media.
+                </p>
+            </div>
+
+            <div class="contact-card animate-up">
+
+                <div class="contact-links">
+                    <a href="mailto:remartlachica@gmail.com">
+                        <span>Email Address</span>
+                        <strong>remartberdijolachica@gmail.com</strong>
+                    </a>
+
+                    <a href="tel:09094524532">
+                        <span>Contact Number</span>
+                        <strong>09094524532</strong>
+                    </a>
+
+                    <!-- Replace # with the actual Facebook profile URL -->
+                    <a
+                        href="https://web.facebook.com/p/Luke-Martinez-61582663296603/?_rdc=1&_rdr#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>Facebook Profile</span>
+                        <strong>Visit my Facebook account</strong>
+                    </a>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <form class="contact-form" id="contact-form">
+                    <h3>Send Me a Message</h3>
+
+                    <p>
+                        Complete the fields below to prepare your message.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                            aria-describedby="name-error"
+                        >
+
+                        <span
+                            class="form-error"
+                            id="name-error"
+                            aria-live="polite"
+                        ></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            aria-describedby="email-error"
+                        >
+
+                        <span
+                            class="form-error"
+                            id="email-error"
+                            aria-live="polite"
+                        ></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+
+                        <textarea
+                            id="contact-message"
+                            name="message"
+                            rows="5"
+                            required
+                            aria-describedby="message-error"
+                        ></textarea>
+
+                        <span
+                            class="form-error"
+                            id="message-error"
+                            aria-live="polite"
+                        ></span>
+                    </div>
+
+                    <button
+                        class="primary-button"
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+
+                    <p
+                        class="form-status"
+                        id="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
                
 
     <!-- FOOTER -->
